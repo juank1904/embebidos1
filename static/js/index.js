@@ -45,8 +45,8 @@ function LED1_Off(){
     console.log("Conectado...");
 	
     client.subscribe("juanpinduisaca.jq@gmail.com/test");
-    message = new Paho.MQTT.Message("hola desde la web");
-    message.destinationName = "juanpinduisaca.jq@gmail.com/test";
+    message2 = new Paho.MQTT.Message("hola desde la web");
+    message2.destinationName = "juanpinduisaca.jq@gmail.com/test";
     message1 = new Paho.MQTT.Message("hola juank");
     message1.destinationName = "juanpinduisaca.jq@gmail.com/test";
     client.send(message);
@@ -68,8 +68,8 @@ function LED1_Off(){
   // called when a message arrives
   function onMessageArrived(message) {
     console.log("onMessageArrived:"+message.payloadString);
-	  document.getElementById("sensor_led").innerHTML=message.payloadString;
-	  document.getElementById("sensor_motor").innerHTML=message.payloadString;
+	  document.getElementById("sensor_led").innerHTML=message2.payloadString;
+	  document.getElementById("sensor_motor").innerHTML=message1.payloadString;
   }
 
   
