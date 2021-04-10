@@ -18,25 +18,6 @@ function LED1_Off(){
 	//document.getElementById("sensor").innerHTML="led off";
 }
 
-function LED1_On() {
-	//alert("led on");
-	console.log("led on");
-	//document.getElementById("sensor").innerHTML="led on";
-	message1 = new Paho.MQTT.Message("1");
-    	message1.destinationName = "juanpinduisaca.jq@gmail.com/test";
-    	client.send(message1);
-  
-}
-function LED1_Off(){	
-	//alert("led off");
-	console.log("led off");
-	message1 = new Paho.MQTT.Message("0");
-    	message1.destinationName = "juanpinduisaca.jq@gmail.com/test";
-    	client.send(message1);
-	//document.getElementById("sensor").innerHTML="led off";
-}
-
-
 
 
 // Create a client instance
@@ -88,9 +69,7 @@ function LED1_Off(){
   function onMessageArrived(message) {
     console.log("onMessageArrived:"+message.payloadString);
 	  document.getElementById("sensor_led").innerHTML=message.payloadString;
-  }
-function onMessageArrived(message1) {
-    console.log("onMessageArrived:"+message1.payloadString);
 	  document.getElementById("sensor_motor").innerHTML=message1.payloadString;
   }
+
   
