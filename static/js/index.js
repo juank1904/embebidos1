@@ -5,15 +5,15 @@ function LED1_On() {
 	console.log("led on");
 	//document.getElementById("sensor").innerHTML="led on";
 	message = new Paho.MQTT.Message("1");
-    	message.destinationName = "juanpinduisaca.jq@gmail.com/test";
+    	//message.destinationName = "juanpinduisaca.jq@gmail.com/test";
     	client.send(message);
   
 }
 function LED1_Off(){	
 	//alert("led off");
 	console.log("led off");
-	message1 = new Paho.MQTT.Message("0");
-    	message.destinationName = "juanpinduisaca.jq@gmail.com/test";
+	message = new Paho.MQTT.Message("0");
+    	//message.destinationName = "juanpinduisaca.jq@gmail.com/test";
     	client.send(message);
 	//document.getElementById("sensor").innerHTML="led off";
 }
