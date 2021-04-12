@@ -70,12 +70,10 @@ function LED1_Off(){
   // called when a message arrives
   function onMessageArrived(message) {
     console.log("onMessageArrived:"+message.payloadString);
-	 jaja= message.payloadString
-	if  (jaja==0){
-	  document.getElementById("sensor_led").innerHTML=message.payloadString;
-	  else
-	  document.getElementById("sensor_motor").innerHTML=message.payloadString;
 	
-    }
+	  document.getElementById("sensor_led").innerHTML=message.payloadString;
+	 
+	  document.getElementById("sensor_motor").innerHTML=message1.payloadString;
+	
   }
   
