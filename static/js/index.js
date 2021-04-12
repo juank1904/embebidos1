@@ -73,14 +73,7 @@ function LED1_Off(){
     console.log("onMessageArrived:"+message.payloadString);
 	  document.getElementById("sensor_led").innerHTML=message.payloadString;
 	  document.getElementById("sensor_motor").innerHTML=message.payloadString;
-	x=message.payloadString;
-     if(x=="Encendido"){
-	 document.getElementById("sensor_led").innerHTML=x;
-     else{	     
-	 document.getElementById("sensor_motor").innerHTML=x;    
-          }
-	}
-	  
+	
 	 
 	  
 	
