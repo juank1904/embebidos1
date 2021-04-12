@@ -48,8 +48,9 @@ function LED1_Off(){
     message = new Paho.MQTT.Message("hola desde la web");
     message.destinationName = "juanpinduisaca.jq@gmail.com/test";
     client.subscribe("juanpinduisaca.jq@gmail.com/test");
-    message1 = new Paho.MQTT.Message("hola juank");
-    message1.destinationName = "juanpinduisaca.jq@gmail.com/test";
+    message = new Paho.MQTT.Message("hola juank");
+    message.destinationName = "juanpinduisaca.jq@gmail.com/test";
+    client.subscribe("juanpinduisaca.jq@gmail.com/test");
     client.send(message);
 	
   }
@@ -73,7 +74,7 @@ function LED1_Off(){
 	
 	  document.getElementById("sensor_led").innerHTML=message.payloadString;
 	 
-	  document.getElementById("sensor_motor").innerHTML=message1.payloadString;
+	  document.getElementById("sensor_motor").innerHTML=message.payloadString;
 	
   }
   
