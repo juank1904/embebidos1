@@ -72,7 +72,7 @@ function LED1_Off(){
   function onMessageArrived(message) {
     console.log("onMessageArrived:"+message.payloadString);
     x=message.payloadString;
-    if(x=="Encendido"){
+    if(x=="Encender"){
 	 document.getElementById("sensor_led").innerHTML=x;
 	 }
     else{	     
