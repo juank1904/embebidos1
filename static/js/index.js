@@ -79,7 +79,13 @@ function LED1_Off(){
 	 document.getElementById("sensor_motor").innerHTML=x;    
          
 	}
-	 
+     if(x=="Apagado"){
+	 document.getElementById("sensor_led").innerHTML=x;
+	 }
+    else{	     
+	 document.getElementById("sensor_motor").innerHTML=x;    
+         
+	}	 
 	  
 	
   }
