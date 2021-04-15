@@ -43,7 +43,6 @@ function LED1_Off(){
   function onConnect() {
     // Once a connection has been made, make a subscription and send a message.
     console.log("Conectado...");
-	
     client.subscribe("juanpinduisaca.jq@gmail.com/test1");
     message = new Paho.MQTT.Message("hola desde la web");
     message.destinationName = "juanpinduisaca.jq@gmail.com/test";
@@ -67,23 +66,22 @@ function LED1_Off(){
   // called when a message arrives
   function onMessageArrived(message) {
     console.log("onMessageArrived:"+message.payloadString);
-	  document.getElementById("sensor_led").innerHTML=message.payloadString
-	  document.getElementById("sensor_led").innerHTML=message.payloadString
-    //x=message.payloadString;
-   // if(x=="Encender"){
-	// document.getElementById("sensor_led").innerHTML=x;
-	// }
-    //else{	     
-	// document.getElementById("sensor_motor").innerHTML=x;    
+	 
+    x=message.payloadString;
+    if(x=="Encender"){
+	 document.getElementById("sensor_led").innerHTML=x;
+	 }
+    else{	     
+	 document.getElementById("sensor_motor").innerHTML=x;    
          
-	//}
-    // if(x=="Apagado"){
-	// document.getElementById("sensor_led").innerHTML=x;
-	// }
-   // else{	     
-	// document.getElementById("sensor_motor").innerHTML=x;    
+	}
+     if(x=="Apagado"){
+	 document.getElementById("sensor_led").innerHTML=x;
+	 }
+    else{	     
+	 document.getElementById("sensor_motor").innerHTML=x;    
          
-	//}	 
+	}	 
 	  
 	
   }
