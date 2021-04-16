@@ -2,7 +2,7 @@
 
 function LED1_On() {
 	//alert("led on");
-	console.log("led on");
+	console.log("historial sensor 1");
 	//document.getElementById("sensor").innerHTML="led on";
 	message = new Paho.MQTT.Message("1");
     	message.destinationName = "juanpinduisaca.jq@gmail.com/test";
@@ -11,7 +11,7 @@ function LED1_On() {
 }
 function LED1_Off(){	
 	//alert("led off");
-	console.log("led off");
+	console.log("lhistorial sensor 2");
 	message = new Paho.MQTT.Message("0");
     	message.destinationName = "juanpinduisaca.jq@gmail.com/test";
     	client.send(message);
@@ -42,7 +42,7 @@ function LED1_Off(){
   // called when the client connects
   function onConnect() {
     // Once a connection has been made, make a subscription and send a message.
-    console.log("Conectado...");
+    console.log("Conectado...para enviar datos al microcontrolador");
     client.subscribe("juanpinduisaca.jq@gmail.com/test1");
     message = new Paho.MQTT.Message("hola desde la web");
     message.destinationName = "juanpinduisaca.jq@gmail.com/test";
@@ -68,19 +68,21 @@ function LED1_Off(){
     console.log("onMessageArrived:"+message.payloadString);
 	 
     x=message.payloadString;
-    if(x=="Encender"){
-	 document.getElementById("sensor_led").innerHTML=x;
-    }
-	  else{
-	    document.getElementById("sensor_led").innerHTML=x;
-	 }
+	  document.getElementById("historial").innerHTML=x;
+	  
+    //if(x=="Encender"){
+	// document.getElementById("sensor_led").innerHTML=x;
+    //}
+	//  else{
+//	    document.getElementById("sensor_led").innerHTML=x;
+//	 }
    
-     if(x=="Apagado"){
-	 document.getElementById("sensor_motor").innerHTML=x;
-     }
-	     else{
-	     document.getElementById("sensor_motor").innerHTML=x;
-	 }
+   //  if(x=="Apagado"){
+//	 document.getElementById("sensor_motor").innerHTML=x;
+   //  }
+/	     else{
+//	     document.getElementById("sensor_motor").innerHTML=x;
+	// }
    	 
 	  
 	
