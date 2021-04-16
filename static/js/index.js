@@ -70,6 +70,7 @@ function LED1_Off(){
     x=message.payloadString;
     if(x=="Encender"){
 	 document.getElementById("sensor_motor").innerHTML=x;
+	    document.getElementById("sensor_led").innerHTML=x;
 	 }
    
      if(x=="Apagado"){
