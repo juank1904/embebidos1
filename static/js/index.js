@@ -80,7 +80,7 @@ function historial_2(){
    //  if(x=="Apagado"){
 //	 document.getElementById("sensor_motor").innerHTML=x;
    //  }
-/	     else{
+//	     else{
 //	     document.getElementById("sensor_motor").innerHTML=x;
 	// }
    	 
