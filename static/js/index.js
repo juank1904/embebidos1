@@ -70,6 +70,8 @@ function LED1_Off(){
     x=message.payloadString;
     if(x=="Encender"){
 	 document.getElementById("sensor_led").innerHTML=x;
+    }
+	  else{
 	    document.getElementById("sensor_led").innerHTML=x;
 	 }
    
