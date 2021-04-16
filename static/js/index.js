@@ -68,7 +68,7 @@ function LED1_Off(){
     console.log("onMessageArrived:"+message.payloadString);
 	 
     x=message.payloadString;
-	  document.getElementById("historial").innerHTML=x;
+	  document.getElementById("Historial").innerHTML=x;
 	  
     //if(x=="Encender"){
 	// document.getElementById("sensor_led").innerHTML=x;
