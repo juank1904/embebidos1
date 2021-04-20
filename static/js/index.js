@@ -9,7 +9,7 @@ function historial_1(){
     	client.send(message);
   
 }
-function historial_1(){	
+function historial_2(){	
 	//alert("led off");
 	console.log("led off");
 	message = new Paho.MQTT.Message("0");
@@ -68,22 +68,19 @@ function historial_1(){
     console.log("onMessageArrived:"+message.payloadString);
 	 
     x=message.payloadString;
+	  y=message.payloadString;
 	  
 	  
 	  
     if(x=="Encender"){
 	 document.getElementById("Historial").innerHTML=x;
     }
-	  else{
-	    document.getElementById("Historial1").innerHTML=x;
-	 }
+	
    
-    if(x=="Apagado"){
+    if(y=="Apagado"){
 	 document.getElementById("Historial1").innerHTML=x;;
      }
-	   else{
-	     document.getElementById("Historial").innerHTML=x;
-	}
+	 
    	 
 	  
 	
