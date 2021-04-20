@@ -69,6 +69,7 @@ function historial_2(){
 	 
     x=message.payloadString;
 	  document.getElementById("Historial").innerHTML=x;
+	  ocument.getElementById("Historial1").innerHTML=x;
 	  
     //if(x=="Encender"){
 	// document.getElementById("sensor_led").innerHTML=x;
