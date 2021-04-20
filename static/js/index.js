@@ -9,7 +9,7 @@ function historial_1(){
     	client.send(message);
   
 }
-function historial_2(){	
+function historial_1(){	
 	//alert("led off");
 	console.log("led off");
 	message = new Paho.MQTT.Message("0");
