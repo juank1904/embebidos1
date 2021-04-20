@@ -70,7 +70,7 @@ function historial_2(){
     x=message.payloadString;
 	  y=message.payloadString;
 	  document.getElementById("Historial").innerHTML=x;
-	    document.getElementById("Historial").innerHTML=y;
+	    document.getElementById("Historial1").innerHTML=y;
 	  
    // if(x=="Encender"){
 //	 document.getElementById("Historial").innerHTML=x;
