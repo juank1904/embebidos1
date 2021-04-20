@@ -72,17 +72,17 @@ function historial_2(){
 	  
 	  
     if(x=="Encender"){
-	 ocument.getElementById("Historial").innerHTML=x;
+	 document.getElementById("Historial").innerHTML=x;
     }
 	  else{
 	    document.getElementById("Historial1").innerHTML=x;
 	 }
    
     if(x=="Apagado"){
-	 ocument.getElementById("Historial1").innerHTML=x;;
+	 document.getElementById("Historial1").innerHTML=x;;
      }
 	   else{
-	     ocument.getElementById("Historial").innerHTML=x;
+	     document.getElementById("Historial").innerHTML=x;
 	}
    	 
 	  
