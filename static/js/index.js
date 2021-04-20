@@ -68,22 +68,22 @@ function historial_2(){
     console.log("onMessageArrived:"+message.payloadString);
 	 
     x=message.payloadString;
-	  document.getElementById("Historial").innerHTML=x;
-	  document.getElementById("Historial1").innerHTML=x;
 	  
-    //if(x=="Encender"){
-	// document.getElementById("sensor_led").innerHTML=x;
-    //}
-	//  else{
-//	    document.getElementById("sensor_led").innerHTML=x;
-//	 }
+	  
+	  
+    if(x=="Encender"){
+	 ocument.getElementById("Historial").innerHTML=x;
+    }
+	  else{
+	    document.getElementById("Historial1").innerHTML=x;
+	 }
    
-   //  if(x=="Apagado"){
-//	 document.getElementById("sensor_motor").innerHTML=x;
-   //  }
-//	     else{
-//	     document.getElementById("sensor_motor").innerHTML=x;
-	// }
+    if(x=="Apagado"){
+	 ocument.getElementById("Historial1").innerHTML=x;;
+     }
+	   else{
+	     ocument.getElementById("Historial").innerHTML=x;
+	}
    	 
 	  
 	
