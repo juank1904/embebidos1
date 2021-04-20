@@ -78,7 +78,7 @@ function historial_2(){
 	}
    
     if(y=="Apagado"){
-	 document.getElementById("Historial1").innerHTML=y;;
+	 document.getElementById("Historial1").innerHTML=x;;
      }
 	  else{
 	document.getElementById("Historial").innerHTML=y;
