@@ -69,20 +69,22 @@ function historial_2(){
 	 
     x=message.payloadString;
     y=message.payloadString;
+	  document.getElementById("Historial").innerHTML=x;
+	  document.getElementById("Historial1").innerHTML=x;
 	  
-    if(x=="Encender"){
-	 document.getElementById("Historial").innerHTML=x;
-    }
-	else{
-	document.getElementById("Historial1").innerHTML=x;
-	}
+//    if(x=="Encender"){
+//	 document.getElementById("Historial").innerHTML=x;
+//    }
+//	else{
+//	document.getElementById("Historial1").innerHTML=x;
+//	}
    
-    if(y=="Apagado"){
-	 document.getElementById("Historial1").innerHTML=y;;
-     }
-	  else{
-	document.getElementById("Historial").innerHTML=y;
-	}
+ //   if(y=="Apagado"){
+//	 document.getElementById("Historial1").innerHTML=y;;
+ //    }
+//	  else{
+//	document.getElementById("Historial").innerHTML=y;
+//	}
    	 
 	  
 	
