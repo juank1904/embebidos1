@@ -17,6 +17,22 @@ function historial_2(){
     	client.send(message);
 	//document.getElementById("sensor").innerHTML="led off";
 }
+function historial_3(){	
+	//alert("led off");
+	console.log("historial sensor 1");
+	message = new Paho.MQTT.Message("2");
+    	message.destinationName = "juanpinduisaca.jq@gmail.com/test";
+    	client.send(message);
+	//document.getElementById("sensor").innerHTML="led off";
+}
+function historial_4(){	
+	//alert("led off");
+	console.log("historial sensor 2");
+	message = new Paho.MQTT.Message("3");
+    	message.destinationName = "juanpinduisaca.jq@gmail.com/test";
+    	client.send(message);
+	//document.getElementById("sensor").innerHTML="led off";
+}
 
 
 
