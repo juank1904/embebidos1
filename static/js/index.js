@@ -79,6 +79,13 @@ function historial_2(){
 	else{
 	document.getElementById("Historial").innerHTML=x;
 		}
+    
+	  if(x=="Encender"){
+	 document.getElementById("Historial0").innerHTML=x;
+    }
+	else{
+	document.getElementById("Historial1").innerHTML=x;
+		}
 	
 
    
