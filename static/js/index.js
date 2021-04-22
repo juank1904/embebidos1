@@ -76,7 +76,7 @@ function historial_2(){
     if(x=="Encender"){
 	 document.getElementById("Historial0").innerHTML=x;
     }
-	else{
+	elseif{
 	document.getElementById("Historial").innerHTML=x;
 	
 	}
