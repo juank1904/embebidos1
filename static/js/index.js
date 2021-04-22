@@ -89,12 +89,12 @@ function historial_2(){
 	
 
    
-  //  if(y=="Apagado"){
-	// document.getElementById("Historial0").innerHTML=y;;
-  //   }
-	//  else{
-	//document.getElementById("Historial1").innerHTML=y;
-//	}
+   if(y=="Apagado"){
+	 document.getElementById("Historial0").innerHTML=y;;
+    }
+	  else{
+	document.getElementById("Historial1").innerHTML=y;
+	}
    	 
 	  
 	
