@@ -104,10 +104,10 @@ function historial_4(){
 		}
    if(x=="historial1"){
 	 document.getElementById("Historial0").innerHTML=x;
-	   document.getElementById("Historial3").innerHTML=y;
-	   document.getElementById("Historial0").innerHTML=y;
-	   document.getElementById("Historial0").innerHTML=x;
-	   document.getElementById("Historial0").innerHTML=y;
+	   document.getElementById("Historial1").innerHTML=y;
+	   document.getElementById("Historial2").innerHTML=y;
+	   document.getElementById("Historial3").innerHTML=x;
+	   document.getElementById("Historial4").innerHTML=y;
     }
 	//else{
 	//document.getElementById("Historial3").innerHTML=x;
