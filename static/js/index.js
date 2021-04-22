@@ -103,10 +103,11 @@ function historial_4(){
 		}
    if(x=="historial1"){
 	 document.getElementById("Historial0").innerHTML=x;
+	   document.getElementById("Historial3").innerHTML=x;
     }
-	else{
-	document.getElementById("Historial3").innerHTML=x;
-		}
+	//else{
+	//document.getElementById("Historial3").innerHTML=x;
+	//	}
     
 //	  if(x=="Encender"){
 //	 document.getElementById("Historial0").innerHTML=x;
