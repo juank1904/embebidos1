@@ -85,7 +85,7 @@ function historial_2(){
   //  }
 //	else{
 ///	document.getElementById("Historial1").innerHTML=x;
-		}
+	//	}
 	
 
    
