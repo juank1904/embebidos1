@@ -89,7 +89,7 @@ function historial_2(){
 	
 
    
-   if(y=="Apagado"){
+   if(x=="Apagado"){
 	 document.getElementById("Historial0").innerHTML=y;;
     }
 	  else{
