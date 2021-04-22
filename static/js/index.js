@@ -69,6 +69,7 @@ function historial_2(){
 	 
     x=message.payloadString;
     y=message.payloadString;
+	  document.getElementById("Historial0").innerHTML=x;
 	  document.getElementById("Historial").innerHTML=x;
 	  document.getElementById("Historial1").innerHTML=x;
 	  
