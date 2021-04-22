@@ -84,7 +84,8 @@ function historial_4(){
     console.log("onMessageArrived:"+message.payloadString);
 	 
     x=message.payloadString;
-    y=message.payloadString;
+    y="nada";
+
 	// document.getElementById("Historial0").innerHTML=x;
 // document.getElementById("Historial").innerHTML=x;
 //	 document.getElementById("Historial1").innerHTML=x;
@@ -103,7 +104,10 @@ function historial_4(){
 		}
    if(x=="historial1"){
 	 document.getElementById("Historial0").innerHTML=x;
-	   document.getElementById("Historial3").innerHTML=x;
+	   document.getElementById("Historial3").innerHTML=y;
+	   document.getElementById("Historial0").innerHTML=y;
+	   document.getElementById("Historial0").innerHTML=x;
+	   document.getElementById("Historial0").innerHTML=y;
     }
 	//else{
 	//document.getElementById("Historial3").innerHTML=x;
