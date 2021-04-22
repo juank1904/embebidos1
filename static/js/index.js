@@ -93,7 +93,19 @@ function historial_4(){
 	 document.getElementById("Historial0").innerHTML=x;
     }
 	else{
-	document.getElementById("Historial").innerHTML=x;
+	document.getElementById("Historial1").innerHTML=x;
+		}
+   if(x=="Apagado"){
+	 document.getElementById("Historial0").innerHTML=x;
+    }
+	else{
+	document.getElementById("Historial2").innerHTML=x;
+		}
+   if(x=="historial1"){
+	 document.getElementById("Historial0").innerHTML=x;
+    }
+	else{
+	document.getElementById("Historial3").innerHTML=x;
 		}
     
 //	  if(x=="Encender"){
@@ -105,11 +117,11 @@ function historial_4(){
 	
 
    
-   if(x=="Apagado"){
+   if(x=="historial2"){
 	 document.getElementById("Historial0").innerHTML=x;;
     }
 	  else{
-	document.getElementById("Historial1").innerHTML=x;
+	document.getElementById("Historial4").innerHTML=x;
 	}
    	 
 	  
