@@ -90,10 +90,10 @@ function historial_2(){
 
    
    if(x=="Apagado"){
-	 document.getElementById("Historial0").innerHTML=y;;
+	 document.getElementById("Historial0").innerHTML=x;;
     }
 	  else{
-	document.getElementById("Historial1").innerHTML=y;
+	document.getElementById("Historial1").innerHTML=x;
 	}
    	 
 	  
