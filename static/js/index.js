@@ -70,8 +70,8 @@ function historial_2(){
     x=message.payloadString;
     y=message.payloadString;
 	// document.getElementById("Historial0").innerHTML=x;
-	//  document.getElementById("Historial").innerHTML=x;
-	//  document.getElementById("Historial1").innerHTML=x;
+// document.getElementById("Historial").innerHTML=x;
+//	 document.getElementById("Historial1").innerHTML=x;
 	  
     if(x=="Encender"){
 	 document.getElementById("Historial0").innerHTML=x;
@@ -80,21 +80,21 @@ function historial_2(){
 	document.getElementById("Historial").innerHTML=x;
 		}
     
-	  if(x=="Encender"){
-	 document.getElementById("Historial0").innerHTML=x;
-    }
-	else{
-	document.getElementById("Historial1").innerHTML=x;
+//	  if(x=="Encender"){
+//	 document.getElementById("Historial0").innerHTML=x;
+  //  }
+//	else{
+///	document.getElementById("Historial1").innerHTML=x;
 		}
 	
 
    
-    if(y=="Apagado"){
-	 document.getElementById("Historial0").innerHTML=y;;
-     }
-	  else{
-	document.getElementById("Historial1").innerHTML=y;
-	}
+  //  if(y=="Apagado"){
+	// document.getElementById("Historial0").innerHTML=y;;
+  //   }
+	//  else{
+	//document.getElementById("Historial1").innerHTML=y;
+//	}
    	 
 	  
 	
